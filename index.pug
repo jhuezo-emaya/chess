@@ -1,0 +1,26 @@
+head
+  script(src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js')
+  link(rel='stylesheet', href='//cdn.jsdelivr.net/flat-ui/2.0/css/flat-ui.css')
+  
+
+body
+  div.flex-container
+    div#left.time-container
+      input.toggle.btn.btn-lg.btn-primary.btn-block(type='button', value='Player 1')
+      span.time
+      
+    div#controls.time-container
+      h1 Chess Clock
+    
+      div.form-group
+        input#time-input.form-control(type='number', placeholder='Minutes', min='1', value='20')
+        input.form-control#pause.btn.btn-block.btn-default(type='button', value='Pause')
+        input#reset.btn.btn-block.btn-danger(type='button', value='Reset')
+      
+      p
+        | Crafted by 
+        a(href='https://www.craigpalermo.com/') @CasuallyCraig
+      
+    div#right.time-container
+      input.toggle.btn.btn-lg.btn-primary(type='button', value='Player 2')
+      span.time
